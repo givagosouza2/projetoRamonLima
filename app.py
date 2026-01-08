@@ -74,10 +74,9 @@ def make_models(random_state: int = 42):
         steps=[
             ("scaler", StandardScaler()),
             ("clf", LogisticRegression(
-                multi_class="multinomial",
-                max_iter=3000,
-                class_weight="balanced",
-                random_state=random_state
+    max_iter=3000,
+    class_weight="balanced",
+    random_state=random_state
             )),
         ]
     )
